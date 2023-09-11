@@ -439,30 +439,8 @@ public class Main {
         System.out.println("****  welcome to my bank  *****");
         bankdetails obj = new bankdetails();
 
-       //   obj.Account_opening();
-
-       // obj.deposit();
-
-      //  obj.withdraw();
-
-       //obj.displayaccount();
-
-       //obj.resetpin();
-
-       // obj.resetnumber();
-
-        //obj.login();
-
-        //obj.menu();
-
-        //obj.Account_opening();
-
-       // obj.displayaccount();
-
         obj.prev_menu();
-        //obj.actionperformed();
 
-       // obj.conti();
         }
     }
 
