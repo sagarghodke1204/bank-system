@@ -130,7 +130,10 @@ import java.util.Random;
       public void withdraw (){
           getpin();
           int ammt;
+          System.out.println("balance before withdrawl"+ balance);
+
           System.out.println("enter ammount to be withdrawn");
+
           ammt = sc.nextInt();
           if (balance >= ammt && ammt%100 == 0){
               balance = balance - ammt;
@@ -147,15 +150,6 @@ import java.util.Random;
               withdraw();
           }
       }
-
-      /*public boolean search(int ac_no) {
-          if ((ac_no) == account_number) {
-              displayaccount();
-              return (true);
-          }
-          return (false);
-      }*/
-
 
       public void login(){
           System.out.println("Enter account number");
@@ -214,43 +208,33 @@ import java.util.Random;
            System.out.println("Please give Your Selection");
            int input = sc.nextInt();
 
-            if (input ==1){
-               displayaccount();
-               conti();
-           }
-           else if (input ==2){
-               withdraw();
-               conti();
-           }
-           else if (input ==3){
-               deposit();
-               conti();
-           }
-           else if (input ==4){
-               resetpin();
-               conti();
 
-           }
-           else if (input ==5){
-               resetnumber();
-               conti();
-
-           }
-
-           else if (input==7){
-               exit();
-               System.out.println(" visit again !!! ");
-           }
-         else if (input==6){
-               update();
-            }
-
-            else {
-               System.out.println("Please give valid Selection");
-               menu();
+           switch (input){
+               case 1:   displayaccount();
+                         conti();
+                         break;
+               case 2 :  withdraw();
+                         conti();
+                         break;
+               case 3:   deposit();
+                         conti();
+                         break;
+               case 4:   resetpin();
+                         conti();
+                         break;
+               case 5:   resetnumber();
+                         conti();
+                         break;
+               case 6:   update();
+                         break;
+               case 7:  exit();
+                        break;
+               default:  System.out.println("Please give valid Selection");
+                         menu();
            }
 
        }
+
 
            public void exit (){}
 
