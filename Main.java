@@ -9,7 +9,7 @@ import java.util.Random;
 
   class bankdetails {
       long account_number;
-       String name;
+      String name;
       String surname;
       String account_type;
       int balance ;
